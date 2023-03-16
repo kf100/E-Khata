@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Add</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="/css/add.css">
+	<link rel="stylesheet" type="text/css" href="/css/dashboard.css">
+  <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+</head>
+
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+<body>
+<!-- <form class="row g-3"> -->
+<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">E-Khata</a>
+  <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <!-- <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search"> -->
+  <label class="form-control form-control-dark w-100" >Admin Login</label>
+  <div class="navbar-nav">
+    <div class="nav-item text-nowrap">
+      <a class="nav-link px-3" href="/admin/logout">Sign out</a>
+    </div>
+  </div>
+</header>
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+      <div class="position-sticky pt-3">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/admin/Adminpage">
+              <span data-feather="home"></span>
+              Dashboard
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">
+              <span data-feather="user-plus"></span>
+              Add user
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+<!--   <div class="container">
+  <div class="row justify-content-center">
+  <div class="col-md-5">
+   <div class="card">
+     <h2 class="card-title text-center">New User</h2>
+      <div class="card-body py-md-4">
+       <form _lpchecked="1" method="post" action="/admin/adduser">
+          <div class="form-group">
+             <input type="text" class="form-control" id="name" placeholder="Name" name="nm" required>
+        </div>
+        <div class="form-group">
+             <input type="text" class="form-control" id="username" placeholder="Username" name="un" required>
+        </div>
+        <div class="form-group">
+             <input type="email" class="form-control" id="email" placeholder="Email" name="em" required>
+                            </div>
+                            
+                          
+   <div class="form-group">
+     <input type="password" class="form-control" id="password" placeholder="Password" name="pw" required>
+   </div>
+   <div class="d-flex flex-row align-items-center justify-content-between">
+                <button class="btn btn-primary">Create User</button>
+          </div>
+       </form>
+     </div>
+  </div>
+</div>
+</div>
+</div> -->
+<form method="post" action="/admin/adduser">
+<div id="login-box">
+  <div class="left">
+    <h1>New User</h1>
+    <input type="text" name="nm" placeholder="Name" required/>
+    <input type="text" name="un" placeholder="Username" required/>
+    <input type="text" name="em" placeholder="E-mail" required/>
+    <input type="password" name="pw" placeholder="Password" required />
+    <input type="password" placeholder="Retype password" required />
+    
+    <input type="submit" name="signup_submit" value="Create user" />
+  </div>
+</div>
+</form>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script>
+  feather.replace()
+</script>
+</body>
+</html>
