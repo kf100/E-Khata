@@ -2,6 +2,7 @@
 An online system to store pending amounts of different users
 
 Admin Page:
+
 URL:localhost:3000/admin
 
 ![image](https://user-images.githubusercontent.com/81957666/225540328-02f5c94f-013d-4b88-a7d7-b27e75d6b551.png)
@@ -11,6 +12,7 @@ URL:localhost:3000/admin
 ![image](https://user-images.githubusercontent.com/81957666/225540428-b457e1b0-4c45-4f40-87e3-df6537138c13.png)
 
 Client Page:
+
 URL:localhost:/3000/client_login
 
 ![image](https://user-images.githubusercontent.com/81957666/225540465-f18f8068-60f8-4871-a63e-8c39bbf5faa4.png)
